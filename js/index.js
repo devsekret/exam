@@ -1,3 +1,17 @@
+const token = window.localStorage.getItem('token')
+const elButton = document.querySelector('.btn')
+
+if(!token) {
+    window.location.replace('login.html')
+}
+
+elButton.addEventListener('click', () => {
+    window.localStorage.removeItem('token')
+    window.location.replace('login.html')
+})
+
+
+
 const elList = document.querySelector('.list__user');
 const userTemp = document.querySelector('.user_temp').content;
 
@@ -74,3 +88,5 @@ async function nmadr() {
     }
 }
 nmadr();
+
+
