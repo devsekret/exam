@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./css/main.css">
+    <title>Exam</title>
+</head>
+
+<body>
+
+    <div class="container">
+        <ul class="list__user"></ul>
+        <ul class="list__post"></ul>
+        <ul class="list__comment"></ul>
+    </div>
+
+    <template class="user_temp">
+        <li class="user_item">
+           <div>
+            <h2 class="user_title"></h2>
+            <h2 class="user_heading"></h2>
+            <p class="user_text"></p>
+            <button class="user_btn">Postlar</button>
+           </div>
+        </li>
+    </template>
+
+    <template class="post_temp">
+        <li class="post_item">
+            <h2 class="post_heading"></h2>
+            <p class="post_text"></p>
+            <button class="post_btn">Sharhlar</button>
+        </li>
+    </template>
+
+    <template class="comment_temp">
+        <li class="comment_item">
+            <h2 class="comment_title"></h2>
+            <h2 class="comment_heading"></h2>
+            <p class="comment_text"></p>
+        </li>
+    </template>
+
+    <script src="js/index.js"></script>
+</body>
+
+</html>
